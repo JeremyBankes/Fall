@@ -12,6 +12,7 @@ import java.awt.datatransfer.Transferable;
 import java.awt.datatransfer.UnsupportedFlavorException;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
+	
 
 public class CopyImagetoClipBoard implements ClipboardOwner {
 
@@ -32,15 +33,15 @@ public class CopyImagetoClipBoard implements ClipboardOwner {
 
 	private class TransferableImage implements Transferable {
 
-		Image i;
+		public Image image;
 
-		public TransferableImage(Image i) {
-			this.i = i;
+		public TransferableImage(Image image) {
+			this.image = image;
 		}
 
 		public Object getTransferData(DataFlavor flavor) throws UnsupportedFlavorException, IOException {
-			if (flavor.equals(DataFlavor.imageFlavor) && i != null) {
-				return i;
+			if (flavor.equals(DataFlavor.imageFlavor) && image != null) {
+				return image;
 			} else {
 				throw new UnsupportedFlavorException(flavor);
 			}

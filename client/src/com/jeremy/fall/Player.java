@@ -1,9 +1,9 @@
 package com.jeremy.fall;
 
-import com.sineshore.j2dge.v1_1.KeyInput;
-import com.sineshore.j2dge.v1_1.KeyInput.KeyAction;
-import com.sineshore.j2dge.v1_1.KeyInput.KeyInputEvent;
-import com.sineshore.j2dge.v1_1.Renderer;
+import com.sineshore.j2dge.v1_1.graphics.Renderer;
+import com.sineshore.j2dge.v1_1.input.KeyInput;
+import com.sineshore.j2dge.v1_1.input.KeyInput.KeyAction;
+import com.sineshore.j2dge.v1_1.input.KeyInput.KeyInputEvent;
 
 public class Player {
 

@@ -4,8 +4,8 @@ import java.awt.Dimension;
 import java.io.File;
 import java.io.IOException;
 
-import com.sineshore.serialization.v2_1.Batch;
-import com.sineshore.serialization.v2_1.Capsule;
+import com.sineshore.serialization.Batch;
+import com.sineshore.serialization.Capsule;
 
 public class Save {
 

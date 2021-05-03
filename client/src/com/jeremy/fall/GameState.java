@@ -1,23 +1,22 @@
 package com.jeremy.fall;
 
-import static java.awt.RenderingHints.*;
-
 import java.awt.Canvas;
 import java.awt.Color;
-import java.awt.Image;
 import java.awt.Rectangle;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.Transferable;
 import java.awt.datatransfer.UnsupportedFlavorException;
 import java.awt.geom.AffineTransform;
 import java.io.IOException;
+import static java.awt.RenderingHints.*;
 
 import com.sineshore.j2dge.v1_1.Game;
-import com.sineshore.j2dge.v1_1.KeyInput;
-import com.sineshore.j2dge.v1_1.KeyInput.KeyAction;
-import com.sineshore.j2dge.v1_1.KeyInput.KeyInputEvent;
-import com.sineshore.j2dge.v1_1.Renderer;
+import com.sineshore.j2dge.v1_1.graphics.Renderer;
+import com.sineshore.j2dge.v1_1.input.KeyInput;
+import com.sineshore.j2dge.v1_1.input.KeyInput.KeyAction;
+import com.sineshore.j2dge.v1_1.input.KeyInput.KeyInputEvent;
 import com.sineshore.j2dge.v1_1.state.State;
+import com.sineshore.j2dge.v1_1.state.component.Image;
 
 public class GameState extends State {
 
@@ -38,17 +37,17 @@ public class GameState extends State {
 		player = new Player(this);
 
 		try {
-			client = new Client((Main) game, "76.11.68.118", 5411);
+			client = new Client((Main) game, "localhost", 5411);
 			setFont(Main.font);
-			Audio.loadAudio("fall", Map.class.getResource("/fall.wav"));
-			Audio.loadAudio("shift", Map.class.getResource("/shift.wav"));
-			Audio.loadAudio("thunk", Map.class.getResource("/thunk.wav"));
-			Audio.loadAudio("bing", Map.class.getResource("/bing.wav"));
-			Audio.loadAudio("lose", Map.class.getResource("/lose.wav"));
-			Audio.loadAudio("move", Map.class.getResource("/move.wav"));
-			Audio.loadAudio("start", Map.class.getResource("/start.wav"));
-			Audio.loadAudio("levelup", Map.class.getResource("/levelup.wav"));
-			Audio.loadAudio("snap", Map.class.getResource("/snap.wav"));
+			Audio.loadAudio("fall", GameState.class.getResource("/fall.wav"));
+			Audio.loadAudio("shift", GameState.class.getResource("/shift.wav"));
+			Audio.loadAudio("thunk", GameState.class.getResource("/thunk.wav"));
+			Audio.loadAudio("bing", GameState.class.getResource("/bing.wav"));
+			Audio.loadAudio("lose", GameState.class.getResource("/lose.wav"));
+			Audio.loadAudio("move", GameState.class.getResource("/move.wav"));
+			Audio.loadAudio("start", GameState.class.getResource("/start.wav"));
+			Audio.loadAudio("levelup", GameState.class.getResource("/levelup.wav"));
+			Audio.loadAudio("snap", GameState.class.getResource("/snap.wav"));
 		} catch (Exception exception) {
 			exception.printStackTrace();
 		}

@@ -7,8 +7,8 @@ import java.util.Random;
 
 import javax.swing.JFrame;
 
-import com.sineshore.j2dge.v1_1.Assets;
 import com.sineshore.j2dge.v1_1.Game;
+import com.sineshore.j2dge.v1_1.assets.Assets;
 
 public class Main extends Game {
 

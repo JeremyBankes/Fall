@@ -10,8 +10,8 @@ import java.net.SocketTimeoutException;
 import java.net.UnknownHostException;
 
 import com.sineshore.j2dge.v1_1.J2DGE;
-import com.sineshore.serialization.v2_1.Batch;
-import com.sineshore.serialization.v2_1.Element;
+import com.sineshore.serialization.Batch;
+import com.sineshore.serialization.Element;
 
 public class Client {
 

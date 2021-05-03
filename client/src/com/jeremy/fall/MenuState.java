@@ -3,10 +3,10 @@ package com.jeremy.fall;
 import java.awt.Color;
 
 import com.sineshore.j2dge.v1_1.Game;
-import com.sineshore.j2dge.v1_1.KeyInput;
-import com.sineshore.j2dge.v1_1.Renderer;
-import com.sineshore.j2dge.v1_1.KeyInput.KeyAction;
-import com.sineshore.j2dge.v1_1.KeyInput.KeyInputEvent;
+import com.sineshore.j2dge.v1_1.graphics.Renderer;
+import com.sineshore.j2dge.v1_1.input.KeyInput;
+import com.sineshore.j2dge.v1_1.input.KeyInput.KeyAction;
+import com.sineshore.j2dge.v1_1.input.KeyInput.KeyInputEvent;
 import com.sineshore.j2dge.v1_1.state.State;
 import com.sineshore.j2dge.v1_1.state.component.Button;
 import com.sineshore.j2dge.v1_1.state.component.Label;

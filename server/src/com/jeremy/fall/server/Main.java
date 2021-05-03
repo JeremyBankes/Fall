@@ -11,8 +11,7 @@ import java.net.URISyntaxException;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-import com.sineshore.networkengine.NetworkServer;
-import com.sineshore.serialization.v2_1.Batch;
+import com.sineshore.serialization.Batch;
 
 public class Main extends NetworkServer {
 
