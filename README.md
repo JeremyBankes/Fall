@@ -1,7 +1,7 @@
 # Fall
 A block stacking game inspired by Tetris.
 
-[![PlayButton]](https://geoline.jeremybankes.com)
+[![PlayButton]](https://github.com/JeremyBankes/Fall/releases/download/Fall/Fall.jar)
 
 [PlayButton]: https://img.shields.io/badge/Download_Fall-4A7376?style=for-the-badge
 
