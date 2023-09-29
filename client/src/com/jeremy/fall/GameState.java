@@ -37,7 +37,7 @@ public class GameState extends State {
 		player = new Player(this);
 
 		try {
-			client = new Client((Main) game, "localhost", 5411);
+			client = new Client((Main) game, "jeremybankes.com", 5411);
 			setFont(Main.font);
 			Audio.loadAudio("fall", GameState.class.getResource("/fall.wav"));
 			Audio.loadAudio("shift", GameState.class.getResource("/shift.wav"));

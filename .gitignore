@@ -1,4 +1,6 @@
 /bin/
+/server/bin
 
 .project
 .classpath
+.settings
